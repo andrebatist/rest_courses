@@ -1,6 +1,8 @@
 # rest_courses
 A REST api Courses
 
+POST запрос при формировании JSON, ставить в Headers key Content-Type value application/json
+
 ### Reference Documentation
 For further reference, please consider the following sections:
 
