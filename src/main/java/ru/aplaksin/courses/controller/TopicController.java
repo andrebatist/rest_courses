@@ -25,12 +25,12 @@ public class TopicController {
 
     @PostMapping("/topics")
     public void addTopic(@RequestBody Topic topic) {
-        topicService.addTopic(topic);
+        topicService.updateTopic(topic);
     }
 
-    @PutMapping("/topics/{id}")
-    public void updateTopic(@RequestBody Topic topic, @PathVariable String id) {
-        topicService.updateTopic(id, topic);
+    @PutMapping("/topics")
+    public void updateTopic(@RequestBody Topic topic) {
+        topicService.updateTopic(topic);
     }
 
     @DeleteMapping("/topics/{id}")
