@@ -8,6 +8,7 @@ import ru.aplaksin.courses.repository.CourseRepository;
 import ru.aplaksin.courses.repository.TopicRepository;
 
 import java.util.List;
+
 @Service
 public class CourseService {
 
@@ -16,7 +17,11 @@ public class CourseService {
     @Autowired
     private TopicRepository topicRepository;
 
-    public List<Course> getAllCourses(String topicId) {
+    public List<Course> getAllCourses() {
+        return courseRepository.findAll();
+    }
+
+    public List<Course> getAllCoursesByTopicId(String topicId) {
         return courseRepository.findByTopicId(topicId);
     }
 
@@ -30,7 +35,7 @@ public class CourseService {
 
     public void addTopicToCourse(Course course, String topicId) {
         Topic topic = topicRepository.findById(topicId).orElse(null);
-        if (topic!= null) {
+        if (topic != null) {
             course.setTopic(topic);
         }
     }

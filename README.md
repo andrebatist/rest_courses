@@ -1,8 +1,11 @@
 # rest_courses
 A REST api Courses
+https://www.youtube.com/watch?v=9mFcT2f8JJI&list=PLqq-6Pq4lTTbx8p2oCgcAQGQyqN8XeA1x&index=32
 
 POST запрос при формировании JSON, ставить в Headers key Content-Type value application/json
 https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+
+
 
 ### Reference Documentation
 For further reference, please consider the following sections:
