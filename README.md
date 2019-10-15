@@ -1,5 +1,6 @@
 # rest_courses
 A REST api Courses
+https://javabrains.io/courses/spring_bootquickstart/
 https://www.youtube.com/watch?v=9mFcT2f8JJI&list=PLqq-6Pq4lTTbx8p2oCgcAQGQyqN8XeA1x&index=32
 
 POST запрос при формировании JSON, ставить в Headers key Content-Type value application/json
